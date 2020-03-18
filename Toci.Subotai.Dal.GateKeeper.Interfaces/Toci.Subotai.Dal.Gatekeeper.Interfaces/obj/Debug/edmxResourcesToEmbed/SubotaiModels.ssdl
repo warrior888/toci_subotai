@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="subotaiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Carts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProductItems" Type="int" />
+    <Property Name="IdUser" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" />
+  </EntityType>
+  <EntityType Name="CreditCards">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsers" Type="bigint" />
+    <Property Name="Number" Type="text" />
+    <Property Name="Month" Type="text" />
+    <Property Name="Year" Type="text" />
+    <Property Name="Owner" Type="text" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" />
+    <Property Name="Currency" Type="text" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCarts" Type="int" />
+    <Property Name="IdUser" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Phrases">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Phrase" Type="text" />
+  </EntityType>
+  <EntityType Name="Pictures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProducts" Type="int" />
+    <Property Name="Photo" Type="text" />
+  </EntityType>
+  <EntityType Name="ProductDescriptionElements">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProducts" Type="int" />
+    <Property Name="ParameterName" Type="text" />
+  </EntityType>
+  <EntityType Name="ProductDescriptionValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProductDescriptionElements" Type="int" />
+    <Property Name="Value" Type="text" />
+  </EntityType>
+  <EntityType Name="ProductItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProducts" Type="int" />
+    <Property Name="Name" Type="text" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCategories" Type="int" />
+    <Property Name="Name" Type="text" />
+    <Property Name="ProductVat" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="IsPriceGross" Type="int" />
+    <Property Name="HowMuchCount" Type="int" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="ProductsSold">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProduct" Type="int" />
+    <Property Name="SoldCount" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="IdLanguages" Type="bigint" />
+    <Property Name="IdUser" Type="bigint" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Translations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdLanguages" Type="bigint" />
+    <Property Name="IdPhrases" Type="bigint" />
+    <Property Name="Translation" Type="text" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComesFrom" Type="int" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="Name" Type="text" />
+    <Property Name="Surname" Type="text" />
+    <Property Name="Email" Type="text" />
+    <Property Name="Phone" Type="text" />
+    <Property Name="Password" Type="text" />
+    <Property Name="EmailVerified" Type="int" />
+    <Property Name="City" Type="text" />
+    <Property Name="PostCode" Type="text" />
+    <Property Name="Street" Type="text" />
+    <Property Name="IdLanguages" Type="bigint" />
+  </EntityType>
+  <Association Name="FK__Carts__IdProduct__45BE5BA9">
+    <End Role="ProductItems" Type="Self.ProductItems" Multiplicity="0..1" />
+    <End Role="Carts" Type="Self.Carts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carts">
+        <PropertyRef Name="IdProductItems" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Carts__IdUser__46B27FE2">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Carts" Type="Self.Carts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carts">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CreditCar__IdUse__42E1EEFE">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="CreditCards" Type="Self.CreditCards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CreditCards">
+        <PropertyRef Name="IdUsers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__IdCarts__498EEC8D">
+    <End Role="Carts" Type="Self.Carts" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="IdCarts" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__IdUser__4A8310C6">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pictures__IdProd__2FCF1A8A">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="Pictures" Type="Self.Pictures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pictures">
+        <PropertyRef Name="IdProducts" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductDe__IdPro__3587F3E0">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductDescriptionElements" Type="Self.ProductDescriptionElements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductDescriptionElements">
+        <PropertyRef Name="IdProducts" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductDe__IdPro__3864608B">
+    <End Role="ProductDescriptionElements" Type="Self.ProductDescriptionElements" Multiplicity="0..1" />
+    <End Role="ProductDescriptionValues" Type="Self.ProductDescriptionValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDescriptionElements">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductDescriptionValues">
+        <PropertyRef Name="IdProductDescriptionElements" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductIt__IdPro__32AB8735">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductItems" Type="Self.ProductItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductItems">
+        <PropertyRef Name="IdProducts" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__IdCate__2CF2ADDF">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="IdCategories" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsS__IdLan__3F115E1A">
+    <End Role="Languages" Type="Self.Languages" Multiplicity="0..1" />
+    <End Role="ProductsSold" Type="Self.ProductsSold" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsSold">
+        <PropertyRef Name="IdLanguages" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsS__IdPro__3E1D39E1">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductsSold" Type="Self.ProductsSold" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsSold">
+        <PropertyRef Name="IdProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsS__IdUse__40058253">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="ProductsSold" Type="Self.ProductsSold" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductsSold">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Translati__IdLan__2739D489">
+    <End Role="Languages" Type="Self.Languages" Multiplicity="0..1" />
+    <End Role="Translations" Type="Self.Translations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Translations">
+        <PropertyRef Name="IdLanguages" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Translati__IdPhr__282DF8C2">
+    <End Role="Phrases" Type="Self.Phrases" Multiplicity="0..1" />
+    <End Role="Translations" Type="Self.Translations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phrases">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Translations">
+        <PropertyRef Name="IdPhrases" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__IdLanguag__3B40CD36">
+    <End Role="Languages" Type="Self.Languages" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IdLanguages" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="subotaiModelStoreContainer">
+    <EntitySet Name="Carts" EntityType="Self.Carts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CreditCards" EntityType="Self.CreditCards" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Languages" EntityType="Self.Languages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phrases" EntityType="Self.Phrases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pictures" EntityType="Self.Pictures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductDescriptionElements" EntityType="Self.ProductDescriptionElements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductDescriptionValues" EntityType="Self.ProductDescriptionValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductItems" EntityType="Self.ProductItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductsSold" EntityType="Self.ProductsSold" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Translations" EntityType="Self.Translations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Carts__IdProduct__45BE5BA9" Association="Self.FK__Carts__IdProduct__45BE5BA9">
+      <End Role="ProductItems" EntitySet="ProductItems" />
+      <End Role="Carts" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Carts__IdUser__46B27FE2" Association="Self.FK__Carts__IdUser__46B27FE2">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Carts" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CreditCar__IdUse__42E1EEFE" Association="Self.FK__CreditCar__IdUse__42E1EEFE">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="CreditCards" EntitySet="CreditCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__IdCarts__498EEC8D" Association="Self.FK__Orders__IdCarts__498EEC8D">
+      <End Role="Carts" EntitySet="Carts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__IdUser__4A8310C6" Association="Self.FK__Orders__IdUser__4A8310C6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pictures__IdProd__2FCF1A8A" Association="Self.FK__Pictures__IdProd__2FCF1A8A">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Pictures" EntitySet="Pictures" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductDe__IdPro__3587F3E0" Association="Self.FK__ProductDe__IdPro__3587F3E0">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductDescriptionElements" EntitySet="ProductDescriptionElements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductDe__IdPro__3864608B" Association="Self.FK__ProductDe__IdPro__3864608B">
+      <End Role="ProductDescriptionElements" EntitySet="ProductDescriptionElements" />
+      <End Role="ProductDescriptionValues" EntitySet="ProductDescriptionValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductIt__IdPro__32AB8735" Association="Self.FK__ProductIt__IdPro__32AB8735">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductItems" EntitySet="ProductItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__IdCate__2CF2ADDF" Association="Self.FK__Products__IdCate__2CF2ADDF">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsS__IdLan__3F115E1A" Association="Self.FK__ProductsS__IdLan__3F115E1A">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="ProductsSold" EntitySet="ProductsSold" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsS__IdPro__3E1D39E1" Association="Self.FK__ProductsS__IdPro__3E1D39E1">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductsSold" EntitySet="ProductsSold" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsS__IdUse__40058253" Association="Self.FK__ProductsS__IdUse__40058253">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProductsSold" EntitySet="ProductsSold" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Translati__IdLan__2739D489" Association="Self.FK__Translati__IdLan__2739D489">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="Translations" EntitySet="Translations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Translati__IdPhr__282DF8C2" Association="Self.FK__Translati__IdPhr__282DF8C2">
+      <End Role="Phrases" EntitySet="Phrases" />
+      <End Role="Translations" EntitySet="Translations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__IdLanguag__3B40CD36" Association="Self.FK__Users__IdLanguag__3B40CD36">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

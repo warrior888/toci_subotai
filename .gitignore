@@ -30,3 +30,4 @@
 *.exe
 *.out
 *.app
+/Toci.Subotai.Dal.GateKeeper.Interfaces/.vs/Toci Subotai/v15/Server/sqlite3

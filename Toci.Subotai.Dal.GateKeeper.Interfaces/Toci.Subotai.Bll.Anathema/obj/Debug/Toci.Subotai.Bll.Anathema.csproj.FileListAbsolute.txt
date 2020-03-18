@@ -1,0 +1,17 @@
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Bll.Anathema.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Bll.Anathema.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Bll.Anathema.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\EntityFramework.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Bll.Anathema.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll.config
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\EntityFramework.xml
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\obj\Debug\Toci.Subotai.Bll.Anathema.csprojAssemblyReference.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\obj\Debug\Toci.Subotai.Bll.Anathema.csproj.CoreCompileInputs.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\obj\Debug\Toci.Subotai.Bll.Anathema.csproj.CopyComplete
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\obj\Debug\Toci.Subotai.Bll.Anathema.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\obj\Debug\Toci.Subotai.Bll.Anathema.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema\bin\Debug\Toci.Subotai.Dal.Gatekeeper.dll.config

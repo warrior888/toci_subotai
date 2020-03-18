@@ -1,0 +1,12 @@
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\Toci.Subotai.Bll.Anathema.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\Toci.Subotai.Bll.Anathema.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll.config
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\obj\Debug\Toci.Subotai.Bll.Anathema.Interfaces.csprojAssemblyReference.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\obj\Debug\Toci.Subotai.Bll.Anathema.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\obj\Debug\Toci.Subotai.Bll.Anathema.Interfaces.csproj.CopyComplete
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\obj\Debug\Toci.Subotai.Bll.Anathema.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Bll.Anathema.Interfaces\obj\Debug\Toci.Subotai.Bll.Anathema.Interfaces.pdb

@@ -1,0 +1,15 @@
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\EntityFramework.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll.config
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\EntityFramework.xml
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\obj\Debug\Toci.Subotai.Dal.Gatekeeper.csprojAssemblyReference.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\obj\Debug\Toci.Subotai.Dal.Gatekeeper.csproj.CoreCompileInputs.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\obj\Debug\Toci.Subotai.Dal.Gatekeeper.csproj.CopyComplete
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\obj\Debug\Toci.Subotai.Dal.Gatekeeper.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\obj\Debug\Toci.Subotai.Dal.Gatekeeper.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\Toci.Subotai.Dal.Gatekeeper.dll.config
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper\bin\Debug\EntityFramework.SqlServer.xml

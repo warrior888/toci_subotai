@@ -1,0 +1,11 @@
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll.config
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\obj\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\obj\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.csproj.CopyComplete
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\obj\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.Subotai.Dal.Gatekeeper.Interfaces\obj\Debug\Toci.Subotai.Dal.Gatekeeper.Interfaces.pdb

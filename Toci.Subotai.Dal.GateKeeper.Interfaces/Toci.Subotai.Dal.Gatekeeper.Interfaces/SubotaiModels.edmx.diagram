@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3fb80ffea62c49868ed2266a5b07f68c" Name="Diagram1">
+        <EntityTypeShape EntityType="subotaiModel.Cart" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Category" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.CreditCard" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Language" Width="1.5" PointX="6" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Order" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Phras" Width="1.5" PointX="6" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Picture" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.ProductDescriptionElement" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.ProductDescriptionValue" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.ProductItem" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Product" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.ProductsSold" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.Translation" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="subotaiModel.User" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <AssociationConnector Association="subotaiModel.FK__Carts__IdProduct__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Carts__IdUser__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Orders__IdCarts__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Products__IdCate__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__CreditCar__IdUse__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductsS__IdLan__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Translati__IdLan__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Orders__IdUser__208CD6FA" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Translati__IdPhr__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Pictures__IdProd__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductDe__IdPro__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductDe__IdPro__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductIt__IdPro__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductsS__IdPro__14270015" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__ProductsS__IdUse__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="subotaiModel.FK__Users__IdLanguag__3B40CD36" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
