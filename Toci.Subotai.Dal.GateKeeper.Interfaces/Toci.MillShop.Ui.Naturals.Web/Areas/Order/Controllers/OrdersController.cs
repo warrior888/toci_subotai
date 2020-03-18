@@ -6,122 +6,120 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Toci.MillShop.Ui.Naturals.Web.BusinessLogic;
 using Toci.Subotai.Dal.Gatekeeper.Interfaces;
 
-namespace Toci.MillShop.Ui.Naturals.Web.Areas.Product.Controllers
+namespace Toci.MillShop.Ui.Naturals.Web.Areas.Order.Controllers
 {
-    public class ProductsController : WebController
+    public class OrdersController : Controller
     {
-        private subotaiEntities db;
+        private subotaiEntities db = new subotaiEntities();
 
-        public ProductsController(subotaiEntities subotaiEntities) : base(subotaiEntities)
-        {
-            db = subotaiEntities;
-        }
-
-        // GET: Product/Products
+        // GET: Order/Orders
         public ActionResult Index()
         {
-            var products = db.Products.Include(p => p.Category);
-            return View(products.ToList());
+            var orders = db.Orders.Include(o => o.Cart).Include(o => o.User);
+            return View(orders.ToList());
         }
 
-        // GET: Product/Products/Details/5
+        // GET: Order/Orders/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subotai.Dal.Gatekeeper.Interfaces.Product product = db.Products.Find(id);
-            if (product == null)
+            Subotai.Dal.Gatekeeper.Interfaces.Order order = db.Orders.Find(id);
+            if (order == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(order);
         }
 
-        // GET: Product/Products/Create
+        // GET: Order/Orders/Create
         public ActionResult Create()
         {
-            ViewBag.IdCategories = new SelectList(db.Categories, "Id", "Name");
+            ViewBag.IdCarts = new SelectList(db.Carts, "Id", "Id");
+            ViewBag.IdUser = new SelectList(db.Users, "Id", "Name");
             return View();
         }
 
-        // POST: Product/Products/Create
+        // POST: Order/Orders/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,IdCategories,Name,ProductVat,IsPriceGross,HowMuchCount,Description,Price")] Subotai.Dal.Gatekeeper.Interfaces.Product product)
+        public ActionResult Create([Bind(Include = "Id,IdCarts,IdUser")] Subotai.Dal.Gatekeeper.Interfaces.Order order)
         {
             if (ModelState.IsValid)
             {
-                db.Products.Add(product);
+                db.Orders.Add(order);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IdCategories = new SelectList(db.Categories, "Id", "Name", product.IdCategories);
-            return View(product);
+            ViewBag.IdCarts = new SelectList(db.Carts, "Id", "Id", order.IdCarts);
+            ViewBag.IdUser = new SelectList(db.Users, "Id", "Name", order.IdUser);
+            return View(order);
         }
 
-        // GET: Product/Products/Edit/5
+        // GET: Order/Orders/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subotai.Dal.Gatekeeper.Interfaces.Product product = db.Products.Find(id);
-            if (product == null)
+            Subotai.Dal.Gatekeeper.Interfaces.Order order = db.Orders.Find(id);
+            if (order == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.IdCategories = new SelectList(db.Categories, "Id", "Name", product.IdCategories);
-            return View(product);
+            ViewBag.IdCarts = new SelectList(db.Carts, "Id", "Id", order.IdCarts);
+            ViewBag.IdUser = new SelectList(db.Users, "Id", "Name", order.IdUser);
+            return View(order);
         }
 
-        // POST: Product/Products/Edit/5
+        // POST: Order/Orders/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,IdCategories,Name,ProductVat,IsPriceGross,HowMuchCount,Description,Price")] Subotai.Dal.Gatekeeper.Interfaces.Product product)
+        public ActionResult Edit([Bind(Include = "Id,IdCarts,IdUser")] Subotai.Dal.Gatekeeper.Interfaces.Order order)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
+                db.Entry(order).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IdCategories = new SelectList(db.Categories, "Id", "Name", product.IdCategories);
-            return View(product);
+            ViewBag.IdCarts = new SelectList(db.Carts, "Id", "Id", order.IdCarts);
+            ViewBag.IdUser = new SelectList(db.Users, "Id", "Name", order.IdUser);
+            return View(order);
         }
 
-        // GET: Product/Products/Delete/5
+        // GET: Order/Orders/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subotai.Dal.Gatekeeper.Interfaces.Product product = db.Products.Find(id);
-            if (product == null)
+            Subotai.Dal.Gatekeeper.Interfaces.Order order = db.Orders.Find(id);
+            if (order == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(order);
         }
 
-        // POST: Product/Products/Delete/5
+        // POST: Order/Orders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Subotai.Dal.Gatekeeper.Interfaces.Product product = db.Products.Find(id);
-            db.Products.Remove(product);
+            Subotai.Dal.Gatekeeper.Interfaces.Order order = db.Orders.Find(id);
+            db.Orders.Remove(order);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -187,6 +187,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Cart\CartAreaRegistration.cs" />
+    <Compile Include="Areas\Cart\Controllers\CartsController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -215,6 +217,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Areas\Order\Controllers\OrdersController.cs" />
+    <Compile Include="Areas\Order\OrderAreaRegistration.cs" />
     <Compile Include="Areas\Product\Controllers\ProductsController.cs" />
     <Compile Include="Areas\Product\ProductAreaRegistration.cs" />
     <Compile Include="BusinessLogic\WebController.cs" />
@@ -279,6 +283,22 @@
     <Content Include="Areas\Product\Views\Products\Details.cshtml" />
     <Content Include="Areas\Product\Views\Products\Edit.cshtml" />
     <Content Include="Areas\Product\Views\Products\Index.cshtml" />
+    <Content Include="Areas\Cart\Views\web.config" />
+    <Content Include="Areas\Cart\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Cart\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Cart\Views\Carts\Create.cshtml" />
+    <Content Include="Areas\Cart\Views\Carts\Delete.cshtml" />
+    <Content Include="Areas\Cart\Views\Carts\Details.cshtml" />
+    <Content Include="Areas\Cart\Views\Carts\Edit.cshtml" />
+    <Content Include="Areas\Cart\Views\Carts\Index.cshtml" />
+    <Content Include="Areas\Order\Views\web.config" />
+    <Content Include="Areas\Order\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Order\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Order\Views\Orders\Create.cshtml" />
+    <Content Include="Areas\Order\Views\Orders\Delete.cshtml" />
+    <Content Include="Areas\Order\Views\Orders\Details.cshtml" />
+    <Content Include="Areas\Order\Views\Orders\Edit.cshtml" />
+    <Content Include="Areas\Order\Views\Orders\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -332,6 +352,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Cart\Models\" />
+    <Folder Include="Areas\Order\Models\" />
     <Folder Include="Areas\Product\Models\" />
   </ItemGroup>
   <ItemGroup>
