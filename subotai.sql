@@ -20,12 +20,15 @@ create table Languages
 	Currency text
 );
 
+insert into Languages (name, currency) values ('Polski', 'PLN');
+
 create table Phrases
 (
 	Id bigint identity primary key,
 	Phrase text
 );
 
+insert into Phrases (Phrase) values ('_welcome');
 
 insert into Languages (name) values ('_polish');
 
@@ -45,6 +48,10 @@ create table Categories
 	Name text
 );
 
+insert into Categories (name) values ('_soap');
+
+select * from products;
+
 create table Products 
 (
 	Id integer identity primary key,
@@ -54,7 +61,8 @@ create table Products
 	IsPriceGross int,
 	HowMuchCount int,
 	Description text,
-	Price decimal
+	Price decimal,
+	Date datetime
 );
 
 create table Pictures

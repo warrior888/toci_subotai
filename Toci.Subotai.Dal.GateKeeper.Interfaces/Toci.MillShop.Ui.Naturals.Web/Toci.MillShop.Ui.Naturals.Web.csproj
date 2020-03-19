@@ -217,6 +217,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Areas\News\Controllers\NewsController.cs" />
+    <Compile Include="Areas\News\NewsAreaRegistration.cs" />
     <Compile Include="Areas\Order\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Order\OrderAreaRegistration.cs" />
     <Compile Include="Areas\Product\Controllers\ProductsController.cs" />
@@ -299,6 +301,14 @@
     <Content Include="Areas\Order\Views\Orders\Details.cshtml" />
     <Content Include="Areas\Order\Views\Orders\Edit.cshtml" />
     <Content Include="Areas\Order\Views\Orders\Index.cshtml" />
+    <Content Include="Areas\News\Views\web.config" />
+    <Content Include="Areas\News\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\News\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\News\Views\News\Create.cshtml" />
+    <Content Include="Areas\News\Views\News\Delete.cshtml" />
+    <Content Include="Areas\News\Views\News\Details.cshtml" />
+    <Content Include="Areas\News\Views\News\Edit.cshtml" />
+    <Content Include="Areas\News\Views\News\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -353,6 +363,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Cart\Models\" />
+    <Folder Include="Areas\News\Models\" />
     <Folder Include="Areas\Order\Models\" />
     <Folder Include="Areas\Product\Models\" />
   </ItemGroup>

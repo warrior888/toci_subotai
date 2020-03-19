@@ -6,13 +6,19 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Toci.MillShop.Ui.Naturals.Web.BusinessLogic;
 using Toci.Subotai.Dal.Gatekeeper.Interfaces;
 
 namespace Toci.MillShop.Ui.Naturals.Web.Areas.Order.Controllers
 {
-    public class OrdersController : Controller
+    public class OrdersController : WebController
     {
-        private subotaiEntities db = new subotaiEntities();
+        private subotaiEntities db;
+
+        public OrdersController(subotaiEntities subotaiEntities) : base(subotaiEntities)
+        {
+            db = subotaiEntities;
+        }
 
         // GET: Order/Orders
         public ActionResult Index()

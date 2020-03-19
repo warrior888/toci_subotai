@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.MillShop.Ui.Naturals.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.MillShop.Ui.Naturals.Web", "Toci.MillShop.Ui.Naturals.Web\Toci.MillShop.Ui.Naturals.Web.csproj", "{F401BFFA-CB83-4731-B874-3B8BFE6903D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.MillShop.Ui.Naturals.Front", "Toci.MillShop.Ui.Naturals.Front\Toci.MillShop.Ui.Naturals.Front.csproj", "{8F46F9D7-9427-4377-8DB2-88DAAB5BE092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F401BFFA-CB83-4731-B874-3B8BFE6903D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F401BFFA-CB83-4731-B874-3B8BFE6903D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F401BFFA-CB83-4731-B874-3B8BFE6903D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F46F9D7-9427-4377-8DB2-88DAAB5BE092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F46F9D7-9427-4377-8DB2-88DAAB5BE092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F46F9D7-9427-4377-8DB2-88DAAB5BE092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F46F9D7-9427-4377-8DB2-88DAAB5BE092}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

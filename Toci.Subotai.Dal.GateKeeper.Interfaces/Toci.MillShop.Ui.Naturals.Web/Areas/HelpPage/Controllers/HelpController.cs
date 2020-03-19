@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using Toci.MillShop.Ui.Naturals.Web.Areas.HelpPage.ModelDescriptions;
 using Toci.MillShop.Ui.Naturals.Web.Areas.HelpPage.Models;
 using Toci.MillShop.Ui.Naturals.Web.BusinessLogic;
+using Toci.Subotai.Dal.Gatekeeper.Interfaces;
 
 namespace Toci.MillShop.Ui.Naturals.Web.Areas.HelpPage.Controllers
 {
@@ -19,7 +20,7 @@ namespace Toci.MillShop.Ui.Naturals.Web.Areas.HelpPage.Controllers
         {
         }
 
-        public HelpController(HttpConfiguration config)
+        public HelpController(HttpConfiguration config) : base(new subotaiEntities())
         {
             Configuration = config;
         }
