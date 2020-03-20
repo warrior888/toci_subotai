@@ -8,21 +8,23 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Toci.MillShop.Ui.Naturals.Web.BusinessLogic;
 using Toci.MillShop.Ui.Naturals.Web.Models;
+using Toci.Subotai.Dal.Gatekeeper.Interfaces;
 
 namespace Toci.MillShop.Ui.Naturals.Web.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : WebController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public AccountController()
+        public AccountController() : base(new subotaiEntities())
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager) : base(new subotaiEntities())
         {
             UserManager = userManager;
             SignInManager = signInManager;

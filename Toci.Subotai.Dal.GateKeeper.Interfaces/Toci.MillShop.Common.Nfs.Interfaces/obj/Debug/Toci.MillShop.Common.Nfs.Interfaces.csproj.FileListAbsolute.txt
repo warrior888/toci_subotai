@@ -1,0 +1,6 @@
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\bin\Debug\Toci.MillShop.Common.Nfs.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\bin\Debug\Toci.MillShop.Common.Nfs.Interfaces.pdb
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\obj\Debug\Toci.MillShop.Common.Nfs.Interfaces.csprojAssemblyReference.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\obj\Debug\Toci.MillShop.Common.Nfs.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\obj\Debug\Toci.MillShop.Common.Nfs.Interfaces.dll
+C:\Users\bzapa\source\repos\toci_subotai\Toci.Subotai.Dal.GateKeeper.Interfaces\Toci.MillShop.Common.Nfs.Interfaces\obj\Debug\Toci.MillShop.Common.Nfs.Interfaces.pdb

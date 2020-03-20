@@ -20,5 +20,10 @@ namespace Toci.Subotai.Dal.Gatekeeper
             //return DBAccess.Set<TModel>().Where(where);
             return null;
         }
+
+        public TModel Insert(TModel model)
+        {
+            return DBAccess.Set<TModel>().Add(model);
+        }
     }
 }
